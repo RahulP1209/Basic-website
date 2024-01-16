@@ -1,0 +1,164 @@
+body {
+    font-family: "Arial", "sans-serif";
+    margin:0;
+    padding: 0;
+    background-color: aquamarine;
+    /*background-image: "/Images/medium.jpg";*/
+    color: black;
+}
+
+header {
+    background-color: black;
+    color: whitesmoke;
+    padding: 1em;
+    text-align:left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    /*position: -webkit-sticky;*/
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+  }
+  
+  /* Left and right column */
+  .column.side {
+    width: 20%;
+  }
+  
+  /* Middle column */
+  .column.middle {
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+}
+  
+  input[type=text]:focus {
+    width: 100%;
+}
+        
+form {
+    max-width: 600px;
+    margin: 1em auto;
+    padding: 20px;
+    background-color: #df5353e8;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.cta-container {
+    text-align: center;
+}
+
+h1{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border: 0em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover{
+    background-color: rgba(6, 0, 12, 0.452);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 33.3% 33.4% 33.3%;
+}
+
+footer{
+    background-color: black;
+    color: whitesmoke;
+    text-align: right;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    position: relative;
+    bottom: 0;
+    max-width: 100%;
+}
